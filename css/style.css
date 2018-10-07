@@ -1,0 +1,398 @@
+/* 设置所有的标签在此页面中初始化的样式 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    color: #333;
+}
+/* 在响应式网页中 所有的距离尽量都是用%来设置 这样可以更好的达到预期的效果 */
+#photo,#people {
+    width: 8%;
+}
+#header-top {
+    width: 100%;
+    position: absolute;
+    margin-left: 30%;
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 100px;
+    /* 鼠标手状显示 */
+    cursor: pointer;
+}
+#header-bottom{
+    float:left;
+    margin-left: 0;
+    margin-top:8px;
+    cursor: pointer;
+}
+#header-icon-people {
+    width: 13%;
+    position: relative;
+    float: left;
+}
+#header-icon-photo {
+    width: 13%;
+    /* 左浮动 大多数情况下是用来将页面浮动更好的布局 */
+    /* 有时候可以使用它来独占一行 这样就解决了布局中全部挤在一起 */
+    float: left;
+}
+.nav-item {
+    margin-right: 10%;
+    color: #333;
+}
+#logo {
+    margin-right: 6%;
+    width: 10%;
+}
+.triangle-down {   
+    width:0;   
+    height:0;
+    /* transparent 透明的 */
+    border-left:5px solid transparent;   
+    border-right:5px solid transparent;   
+    border-top:5px solid #ccc;
+    margin-top: 10px;
+    /* 绝对定位(父元素) */
+    position: absolute;
+}
+.wrapper{
+    width: 100%;
+	margin: 0 auto;
+    padding-bottom: 50px;
+    /* 相对定位 */
+    position: relative;
+}
+#app{
+    width: 100%;
+    /* 溢出内容被修剪 */
+	overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+#app img {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.flex-caption {
+	color: #fff;
+	background: transparent;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin: auto;
+    z-index: 99;
+}
+.flex-caption h1 {
+    font-size: 60px;
+    color: #fff;
+}
+.flex-caption h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.flex-caption p {
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+.flex-caption button {
+    margin-top: 10px;
+}
+/* 此 class样式 为多个元素使用 */
+.downapp {
+    background: #cc3333;
+    color: #fff;
+}
+#app .preNext{
+	width: 45px;
+	height: 100px;
+	position: absolute;
+    top: 30%;
+    /* 背景图片不重复 */
+	background: url(../img/sprite.bmp) no-repeat 0 0;
+    cursor: pointer;
+    /* 透明度为0.3 可以刚好的来显示内容 */
+    opacity: 0.3;
+}
+#app .pre{
+    /* 相对定位(父元素) */
+    position: absolute;
+    left: -56%;
+}
+#app .next{
+    right: -48%;
+    position: absolute;
+    /* 背景定位 右上角 */
+	background-position: right top;
+}
+.textLeft {
+    cursor: pointer;
+}
+.textLeft p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 35px;
+}
+.textLeft button {
+    margin-top: 10px;
+}
+.imgRight img{
+    width: 90%;
+}
+.box {
+    border: 1px solid #ccc;
+    height: 320px;
+}
+.box:hover {
+    background: #cc3333;
+    color: #fff;
+}
+.box span {
+	font-size: 45px;
+	padding: 36px 0 14px 0;
+	color: #c97131;
+    text-align: center;
+}
+.box-area p {
+    word-break: break-all;
+    line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    margin-left: 10%;
+}
+.box-area p a{
+    color: #cc3333;
+}
+#content {
+    cursor: pointer;
+}
+#content .service {
+    margin-bottom: 10px;
+}
+#content,#data {
+    margin-top: 55px;
+}
+#data .daTa {
+    margin-top: 20px;
+    cursor: pointer;
+}
+#data .daTa img, #data .daTa h4 {
+    margin-bottom: 10px;
+}
+#data .daTa .btn {
+    margin-bottom: 30px;
+}
+#goodText {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 55px;
+}
+.goodTextLeft, .goodTextRight {
+    cursor: pointer;
+}
+#goodText .goodTextLeft {
+    float: left;
+    width: 50%;
+    height: 379px;
+    background: url(../img/bg1.jpg) no-repeat;
+}
+#goodText .goodTextRight {
+    float: left;
+    width: 50%;
+    height: 379px;
+    background: url(../img/bg2.jpg) no-repeat;
+}
+.goodTextLeft-textImg {
+    margin: 8% 0 0 25%;
+}
+.goodTextLeft-text {
+    float: left;
+    margin-right: 20px;
+}
+.goodTextLeft-text h4,.goodTextLeft-text p,.goodTextRight-text h4, .goodTextRight-text p {
+    color: #fff;
+    margin: 0;
+}
+.goodTextRight-textImg {
+    margin: 7% 0 0 15%;
+}
+.goodTextRight-img {
+    width: 72px;
+    height: 65px;
+    margin-right: 20px;
+    float: left;
+}
+.camera {
+    float: left;
+    position: absolute;
+    left: 48%;
+    top: 10%;
+    z-index: 9;
+}
+#userTeam {
+    margin-top: 55px;
+}
+#userTeam .userTeam-title-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.userTeam {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.userTeam-text {
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 0;
+    width: 80%;
+    height: 400px;
+    /* 过渡时间为0.5秒 */
+    transition:.5s
+}
+#userTeam {
+    cursor: pointer;
+}
+#userTeam p{
+    font-size: 20px;
+    text-indent: 2em;
+}
+/* 将三个部分一起设置 */
+.minTech,.minTech2,.minTech3 {
+    width: 100%;
+    background: #b66128;
+    color: #fff;
+    font-size: 22px;
+    line-height: 60px;
+    padding-right: 25px;
+}
+/* 将不同的部分进行更改 */
+/* 这样可以减少代码量 从而起到优化的作用 */
+.minTech2 {
+    background: #c97131;
+}
+.minTech3 {
+    background: #ab7103;
+}
+.money {
+    width: 100%;
+    background: #efefef;
+    height: 50px;
+    /* 设置line-height属性和height一样 这样看起来是居中的 */
+    line-height: 50px;
+    padding-right: 25px;
+}
+.userTeam ul {
+    list-style: none;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.userTeam ul li {
+    margin-bottom: 6px;
+}
+.userTeam .btn {
+    width: 50%;
+    color: #fff;
+}
+.userTeam .bTn1 {
+    background: #b66128;
+}
+.userTeam .bTn2 {
+    background: #c97131;
+}
+.userTeam .bTn3 {
+    background: #ab7103;
+}
+footer {
+    width: 100%;
+    background: #535353;
+    height: 200px;
+    margin-top: 40px;
+}
+footer h3 {
+    color: 36px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+footer p {
+    color: #fff;
+    line-height: 25px;
+}
+footer img {
+    width: 20%;
+    position: relative;
+}
+footer {
+    cursor: pointer;
+}
+.imgImg{
+    width: 100%;
+}
+.imgImg img {
+    margin-left:-5px;
+}
+#introduction {
+    margin-bottom: 30px;
+}
+#introduction h2 {
+    margin-bottom: 20px;
+}
+#introduction img {
+    width: 100%;
+    height: 80%;
+}
+.txtjieshao p {
+    line-height: 40px;
+}
+.txtjieshao h3{
+    font-size: 36px;
+}
+.txtjieshao .yj {
+    color: #cc3333;
+    font-size: 18px;
+}
+.txtjieshao .p1 {
+    font-size: 22px;
+}
+.txtjieshao .btn {
+    margin-top: 20px;
+    width: 50%;
+}
+/* 媒体查询来设置在不同的尺寸下显示的差距 */
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .lastImg {
+        display: none;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .last1Img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #header-top {
+        display: none;
+    }
+    #header-bottom {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    /* 在手机端 .wrapper隐藏 */
+    .wrapper {
+        display: none;
+    }
+    #welcome {
+        float: left;
+    }
+    .imgImg {
+        display: none;
+    }
+}
